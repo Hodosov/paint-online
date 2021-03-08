@@ -3,12 +3,12 @@ import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
+// import MenuIcon from "@material-ui/icons/Menu";
 import { Grid } from "@material-ui/core";
 import b1 from "../assets/brush.svg";
 import b2 from "../assets/circle.svg";
 import b3 from "../assets/eraser.svg";
-import b4 from "../assets/input.svg";
+// import b4 from "../assets/input.svg";
 import b5 from "../assets/line.svg";
 import b6 from "../assets/rect.svg";
 import b7 from "../assets/save.svg";
@@ -19,11 +19,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-
-  //   menuButton: {
-  //     color: "#000",
-  //     marginRight: theme.spacing(2),
-  //   },
 
   toolbar: {
     background: "#fff",
@@ -47,19 +42,19 @@ export const AppHeader = () => {
           <Grid container justify="space-between">
             <Grid item xs={6}>
               <IconButton>
-                <img src={b1} />
+                <img src={b1} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b6} />
+                <img src={b6} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b2} />
+                <img src={b2} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b3} />
+                <img src={b3} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b5} />
+                <img src={b5} alt="" />
               </IconButton>
               <IconButton>
                 <input type='color' />
@@ -67,13 +62,13 @@ export const AppHeader = () => {
             </Grid>
             <Grid container item xs={6} justify="flex-end">
               <IconButton>
-                <img src={b8} />
+                <img src={b8} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b9} />
+                <img src={b9} alt="" />
               </IconButton>
               <IconButton>
-                <img src={b7} />
+                <img src={b7} alt="" />
               </IconButton>
             </Grid>
           </Grid>
