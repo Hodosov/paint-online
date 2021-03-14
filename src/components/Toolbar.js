@@ -14,6 +14,10 @@ import b6 from "../assets/rect.svg";
 import b7 from "../assets/save.svg";
 import b8 from "../assets/undo.svg";
 import b9 from "../assets/redo.svg";
+import Brush from "../tools/Brush";
+import canvasState from "../store/canvasState";
+import toolState from '../store/toolState';
+import Rect from "../tools/Rect";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,10 +45,10 @@ export const AppHeader = () => {
         <Toolbar className={classes.toolbar}>
           <Grid container justify="space-between">
             <Grid item xs={6}>
-              <IconButton>
+              <IconButton onClick={() => toolState.setTool(new Brush(canvasState.canvas))}>
                 <img src={b1} alt="" />
               </IconButton>
-              <IconButton>
+              <IconButton onClick={() => toolState.setTool(new Rect(canvasState.canvas))}>
                 <img src={b6} alt="" />
               </IconButton>
               <IconButton>
